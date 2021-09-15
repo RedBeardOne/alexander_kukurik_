@@ -1,10 +1,10 @@
-package join;
+package join.data;
 
 public class JoinedDataRow extends DataRow{
     String total;
-    JoinedDataRow(int key, String title, String total){
+    public JoinedDataRow(int key, String title, String country){
         super(key, title);
-        this.total = total;
+        this.total = country;
     }
 
     public String getTotal() {

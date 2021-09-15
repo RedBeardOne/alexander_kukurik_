@@ -1,9 +1,12 @@
-package join;
+package join.operation;
+
+import join.data.DataRow;
+import join.data.JoinedDataRow;
 
 import java.util.ArrayList;
 import java.util.Collection;
 
-public class InnerJoinOperation implements JoinOperation <DataRow, DataRow, JoinedDataRow>{
+public class InnerJoinOperation implements JoinOperation<DataRow, DataRow, JoinedDataRow> {
 
     @Override
     public Collection<JoinedDataRow> join(Collection<DataRow> leftCollection, Collection<DataRow> rightCollection) {
@@ -21,6 +24,5 @@ public class InnerJoinOperation implements JoinOperation <DataRow, DataRow, Join
         };
         return joinedDataRows;
     }
-
 }
 
